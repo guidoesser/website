@@ -1,35 +1,28 @@
-import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import React from 'react'
 
 const Datenschutz = () => {
   return (
-    <div className="bg-gray-50 min-h-screen flex flex-col">
-      <Header />
-      <main className="flex-grow container mx-auto px-4 py-12">
-        <h1 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">Datenschutzerklärung</h1>
+    <div className="container mx-auto px-4 py-8">
+      <h1 className="text-3xl font-bold mb-6">Datenschutzerklärung</h1>
+      <div className="prose max-w-none">
+        <h2>1. Datenschutz auf einen Blick</h2>
+        <h3>Allgemeine Hinweise</h3>
+        <p>
+          Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen.
+        </p>
         
-        <div className="prose max-w-4xl">
-          {/* ... (vorheriger Inhalt bleibt gleich) ... */}
-          
-          <h3 className="text-xl font-semibold text-blue-700 mt-4 mb-2">Hinweis zur verantwortlichen Stelle</h3>
-          <p>
-            Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:<br />
-            <br />
-            GUTRESS-IT Solutions GmbH<br />
-            Musterstraße 123<br />
-            12345 Musterstadt<br />
-            <br />
-            Telefon: +49 (0) 123 456789<br />
-            E-Mail: info@gutress.de
-          </p>
-          
-          {/* ... (restlicher Inhalt bleibt gleich) ... */}
-        </div>
-      </main>
-      <Footer />
+        <h2>2. Hosting</h2>
+        <p>
+          Unser Hoster erhebt in sog. Logfiles folgende Daten, die Ihr Browser übermittelt:
+        </p>
+        <ul>
+          <li>IP-Adresse</li>
+          <li>Datum und Uhrzeit der Anfrage</li>
+          <li>Verwendeter Browser und Betriebssystem</li>
+        </ul>
+      </div>
     </div>
-  );
-};
+  )
+}
 
-export default Datenschutz;
+export default Datenschutz

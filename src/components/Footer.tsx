@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -16,16 +17,24 @@ const Footer = () => {
           </div>
           <div className="text-left">
             <h4 className="text-lg font-bold mb-4">Kontakt</h4>
-            <p className="mb-2 text-muted-foreground">Musterstraße 123</p>
-            <p className="mb-2 text-muted-foreground">12345 Musterstadt</p>
-            <p className="mb-2 text-muted-foreground">Tel: +49 123 456789</p>
+            <p className="mb-2 text-muted-foreground">Zum Alten Bad 18</p>
+            <p className="mb-2 text-muted-foreground">29229 Celle</p>
+            <p className="mb-2 text-muted-foreground">Tel: +49 151 23 28 93 92</p>
             <p className="text-muted-foreground">Email: info@gutress.de</p>
           </div>
           <div className="text-left">
             <h4 className="text-lg font-bold mb-4">Rechtliches</h4>
             <ul className="space-y-2">
-              <li><a href="/impressum" className="text-muted-foreground hover:text-accent">Impressum</a></li>
-              <li><a href="/datenschutz" className="text-muted-foreground hover:text-accent">Datenschutz</a></li>
+              <li>
+                <Link to="/impressum" className="text-muted-foreground hover:text-accent">
+                  Impressum
+                </Link>
+              </li>
+              <li>
+                <Link to="/datenschutz" className="text-muted-foreground hover:text-accent">
+                  Datenschutz
+                </Link>
+              </li>
               <li><a href="#" className="text-muted-foreground hover:text-accent">AGB</a></li>
             </ul>
           </div>
